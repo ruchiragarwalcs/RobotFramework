@@ -1,3 +1,4 @@
+*** Settings ***
 *** Test Cases ***
 FirstTest
     Log    Automation Testing
