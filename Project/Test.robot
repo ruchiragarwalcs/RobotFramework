@@ -4,7 +4,7 @@ FirstTest
     Log    Automation Testing
     
 SecondTest
-    Log    Selenium Tool
+    Log    Selenium Tool for automation testing
     
 ThirdTest
     Log    Robot Framework
