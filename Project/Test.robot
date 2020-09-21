@@ -7,4 +7,4 @@ SecondTest
     Log    Selenium Tool for automation testing
     
 ThirdTest
-    Log    Robot Framework
+    Log    Robot Framework for automation
