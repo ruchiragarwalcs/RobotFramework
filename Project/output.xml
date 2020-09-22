@@ -1,54 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20200919 19:28:07.961" rpa="false">
-<suite id="s1" name="Project" source="C:\Users\ruagarwal\Desktop\Robot Framework\Eclipse Workspace\Project">
-<suite id="s1-s1" name="Test" source="C:\Users\ruagarwal\Desktop\Robot Framework\Eclipse Workspace\Project\Test.robot">
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20200922 08:10:21.048" rpa="false">
+<suite id="s1" name="Project" source="C:\Users\ruagarwal\git\RobotFramework\Project">
+<suite id="s1-s1" name="Test" source="C:\Users\ruagarwal\git\RobotFramework\Project\Test.robot">
 <test id="s1-s1-t1" name="FirstTest">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Automation Testing</arg>
 </arguments>
-<msg timestamp="20200919 19:28:08.343" level="INFO">Automation Testing</msg>
-<status status="PASS" starttime="20200919 19:28:08.342" endtime="20200919 19:28:08.344"></status>
+<msg timestamp="20200922 08:10:22.207" level="INFO">Automation Testing</msg>
+<status status="PASS" starttime="20200922 08:10:22.207" endtime="20200922 08:10:22.208"></status>
 </kw>
-<status status="PASS" starttime="20200919 19:28:08.340" endtime="20200919 19:28:08.344" critical="yes"></status>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>smoke</arg>
+</arguments>
+<msg timestamp="20200922 08:10:22.208" level="INFO">Set tag 'smoke'.</msg>
+<status status="PASS" starttime="20200922 08:10:22.208" endtime="20200922 08:10:22.208"></status>
+</kw>
+<tags>
+<tag>smoke</tag>
+</tags>
+<status status="PASS" starttime="20200922 08:10:22.206" endtime="20200922 08:10:22.209" critical="yes"></status>
 </test>
 <test id="s1-s1-t2" name="SecondTest">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>Selenium Tool</arg>
+<arg>Selenium Tool for automation testing</arg>
 </arguments>
-<msg timestamp="20200919 19:28:08.346" level="INFO">Selenium Tool</msg>
-<status status="PASS" starttime="20200919 19:28:08.346" endtime="20200919 19:28:08.347"></status>
+<msg timestamp="20200922 08:10:22.210" level="INFO">Selenium Tool for automation testing</msg>
+<status status="PASS" starttime="20200922 08:10:22.209" endtime="20200922 08:10:22.210"></status>
 </kw>
-<status status="PASS" starttime="20200919 19:28:08.345" endtime="20200919 19:28:08.347" critical="yes"></status>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>smoke</arg>
+</arguments>
+<msg timestamp="20200922 08:10:22.210" level="INFO">Set tag 'smoke'.</msg>
+<status status="PASS" starttime="20200922 08:10:22.210" endtime="20200922 08:10:22.210"></status>
+</kw>
+<tags>
+<tag>smoke</tag>
+</tags>
+<status status="PASS" starttime="20200922 08:10:22.209" endtime="20200922 08:10:22.211" critical="yes"></status>
 </test>
 <test id="s1-s1-t3" name="ThirdTest">
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>Robot Framework</arg>
+<arg>Robot Framework for automation</arg>
 </arguments>
-<msg timestamp="20200919 19:28:08.350" level="INFO">Robot Framework</msg>
-<status status="PASS" starttime="20200919 19:28:08.350" endtime="20200919 19:28:08.350"></status>
+<msg timestamp="20200922 08:10:22.212" level="INFO">Robot Framework for automation</msg>
+<status status="PASS" starttime="20200922 08:10:22.212" endtime="20200922 08:10:22.212"></status>
 </kw>
-<status status="PASS" starttime="20200919 19:28:08.348" endtime="20200919 19:28:08.351" critical="yes"></status>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>regression</arg>
+</arguments>
+<msg timestamp="20200922 08:10:22.212" level="INFO">Set tag 'regression'.</msg>
+<status status="PASS" starttime="20200922 08:10:22.212" endtime="20200922 08:10:22.213"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" starttime="20200922 08:10:22.211" endtime="20200922 08:10:22.213" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200919 19:28:08.332" endtime="20200919 19:28:08.352"></status>
+<test id="s1-s1-t4" name="Fourth Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${Google_URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200922 08:10:22.214" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20200922 08:10:22.214" endtime="20200922 08:10:28.774"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200922 08:10:28.776" endtime="20200922 08:10:28.784"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200922 08:10:30.789" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200922 08:10:28.785" endtime="20200922 08:10:30.791"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>Automation Testing</arg>
+</arguments>
+<msg timestamp="20200922 08:10:30.797" level="INFO">Typing text 'Automation Testing' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20200922 08:10:30.794" endtime="20200922 08:10:31.029"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200922 08:10:33.030" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200922 08:10:31.029" endtime="20200922 08:10:33.030"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200922 08:10:33.031" endtime="20200922 08:10:37.230"></status>
+</kw>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>regression</arg>
+</arguments>
+<msg timestamp="20200922 08:10:37.234" level="INFO">Set tag 'regression'.</msg>
+<status status="PASS" starttime="20200922 08:10:37.231" endtime="20200922 08:10:37.234"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" starttime="20200922 08:10:22.213" endtime="20200922 08:10:37.235" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200922 08:10:21.210" endtime="20200922 08:10:37.239"></status>
 </suite>
-<status status="PASS" starttime="20200919 19:28:08.247" endtime="20200919 19:28:08.356"></status>
+<status status="PASS" starttime="20200922 08:10:21.169" endtime="20200922 08:10:37.251"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0">regression</stat>
+<stat pass="2" fail="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="Project">Project</stat>
-<stat pass="3" fail="0" id="s1-s1" name="Test">Project.Test</stat>
+<stat pass="4" fail="0" id="s1" name="Project">Project</stat>
+<stat pass="4" fail="0" id="s1-s1" name="Test">Project.Test</stat>
 </suite>
 </statistics>
 <errors>
